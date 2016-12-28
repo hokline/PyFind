@@ -2,7 +2,7 @@
 # a core set of stuff for GUI programs
 #
 
-__file__    = "Mcore.py" 
+__file__    = "Mcore.py"
 __version__ = "Mcore  20120531"
 
 # This module implements support functions for several modules/programs.
@@ -11,7 +11,7 @@ import time         # uses: strftime, localtime, time
 
 from Tkinter import *
 
-### import os           # uses sep, extsep, linesep, 
+### import os           # uses sep, extsep, linesep,
 ### pathsep = os.sep
 ### extsep = os.extsep
 ### linesep = os.linesep
@@ -34,8 +34,8 @@ Arial12N  = ('arial', 12, 'normal')
 Times12N  = ('times', 12, 'normal')
 LabelFont = ('courier', 12, 'bold')
 ListFont  = ('courier', 11, 'bold')
-    
-# --------------------------------------------------------------------- FormatDH 
+
+# --------------------------------------------------------------------- FormatDH
 # DHrec = data record, a list of data fields
 # FD = list of field defs = [[field #, 'WidthJustType'],   ]
 # width = total width of display string, including spaces fore and aft
