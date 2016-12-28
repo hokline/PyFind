@@ -1,5 +1,5 @@
 
-__file__    = "Mfile.py" 
+__file__    = "Mfile.py"
 __version__ = "20110708"
 __doc__ = "File access support functions for GUI programs."
 
@@ -7,7 +7,7 @@ from Tkinter import *
 import Mcore
   # uses: CompAB, Alabelframe, Abutton, Acanvas, Alabel, Alistbox,
   #       Sjust, QABdialog, DEM
-  
+
 import time                # uses localtime
 import os                  # uses getcwd, walk, path, chdir
 import sys                 # uses path
@@ -43,7 +43,7 @@ class FileInfo:
     self.mtimeS = Ms + '/' + Ds + '/' + Ys + '  ' + Hs + ':' + Mns
     self.Items = 0                                    # items within PathNameExt
     self.Size = 0                                     # total size of all items
-    
+
     if self.NameExt[0] == '.': return                 # ignore hidden
     else:                                             # get Items and Size
       self.Items = 1                                  # this item
@@ -102,13 +102,13 @@ def SearchDir(Dir, Tree, Name, Extension, Content): # search Dir for nam/ext/txt
                 Infile.close()
     return fols
   Folders = Search(Dir)
- 
+
   def InfoSort(a, b):
     av = a.NameExt.lower()
     bv = b.NameExt.lower()
-    if av < bv: return -1 
+    if av < bv: return -1
     else: return 1
-  
+
   if len(Folders) > 0: Folders.sort(InfoSort)
   if len(Files) > 0: Files.sort(InfoSort)
   return Folders, Files
